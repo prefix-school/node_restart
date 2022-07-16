@@ -23,7 +23,7 @@ app.get('/restart', (req, res) => {
         }
     });
 
-    res.send(`stdout: ${stdout} | stderr: ${stderr}`)
+    res.sendStatus(200);
 });
 
 app.listen(3001, () => console.log('Node.js server started on port 3001.'));
