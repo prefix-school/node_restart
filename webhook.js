@@ -12,7 +12,7 @@ app.use(
 );
 
 app.get('/restart', (req, res) => {
-    exec('pm2 restart all', (err, stdout, stderr) => {
+    exec('pm2 restart main', (err, stdout, stderr) => {
         if (err) {
             //some err occurred
             console.error(err);
